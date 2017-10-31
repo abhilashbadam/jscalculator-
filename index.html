@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALCULATOR</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+<form>
+ <input type="text" id="tuch" style="text-align:right"><br>
+ <input type="button" class="doit" value="(" onclick="toScreen('(')">
+  <input type="button"  class="doit" value=")" onclick="toScreen(')')">
+     <input type="button" class="doit" value="%" onclick="toScreen('%')">
+     <input type="button"  class="doit" value="AC" onclick="toScreen('c')"><br>
+     <input type="button" class="number" value="7" onclick="toScreen('7')">
+    <input type="button" class="number" value="8" onclick="toScreen('8')">
+    <input type="button" class="number" value="9" onclick="toScreen('9')">
+    <input type="button" class="doit"  value="÷" onclick="toScreen('/')"><br>
+    <input type="button" class="number" value="4" onclick="toScreen('4')">
+    <input type="button" class="number" value="5" onclick="toScreen('5')">
+    <input type="button" class="number" value="6" onclick="toScreen('6')">
+    <input type="button" class="doit"  value="X" onclick="toScreen('*')"><br>
+    <input type="button" class="number" value="1" onclick="toScreen('1')">
+    <input type="button" class="number" value="2" onclick="toScreen('2')">
+    <input type="button" class="number" value="3" onclick="toScreen('3')">
+    <input type="button" class="doit" value="-" onclick="toScreen('-')"><br>
+    <input type="button" class="number" value="0" onclick="toScreen('0')">
+    <input type="button" class="number" value="." onclick="toScreen('.')">
+    <input type="button" id="main" value="=" onclick="answer('')">
+    <input type="button" class="doit" value="+" onclick="toScreen('+')">
+    </form>
+        </div>
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
